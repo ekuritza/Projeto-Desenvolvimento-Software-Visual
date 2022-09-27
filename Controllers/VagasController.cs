@@ -18,14 +18,14 @@ namespace API.Controllers
         // GET: /api/vagas/listar
         [HttpGet]
         [Route("listar")]
-        public IActionResult Listar() => Ok(_context.Vagas.ToList());
+        public IActionResult Listar() => Ok(_context.vagas.ToList());
 
         // POST: /api/vagas/cadastrar
         [HttpPost]
         [Route("cadastrar")]
         public IActionResult Cadastrar([FromBody] Vagas vagas)
         {
-            _context.Vagas.Add(vagas);
+            _context.vagas.Add(vagas);
             _context.SaveChanges();
             return Created("", vagas);
         }
@@ -35,7 +35,7 @@ namespace API.Controllers
         [Route("buscar/{id}")]
         public IActionResult Buscar([FromRoute] int id)
         {
-            Vagas vagas = _context.Vagas.
+            Vagas vagas = _context.vagas.
                 FirstOrDefault(f => f.Id.Equals(id));
             return vagas != null ? Ok(vagas) : NotFound();
         }

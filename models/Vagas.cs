@@ -8,7 +8,7 @@ namespace API.Models
         public Vagas () => CriadoEm = DateTime.Now;
         public int       Id { get; set; }
         public int       Id_morador { get; set; }
-        public Moradores moradores { get; set; }
+        public Morador moradores { get; set; }
         public DateTime  CriadoEm { get; set; }
     }
 }

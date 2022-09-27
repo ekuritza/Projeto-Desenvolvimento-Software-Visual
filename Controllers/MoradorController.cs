@@ -18,14 +18,14 @@ namespace API.Controllers
         // GET: /api/morador/listar
         [HttpGet]
         [Route("listar")]
-        public IActionResult Listar() => Ok(_context.Morador.ToList());
+        public IActionResult Listar() => Ok(_context.moradores.ToList());
 
         // POST: /api/morador/cadastrar
         [HttpPost]
         [Route("cadastrar")]
         public IActionResult Cadastrar([FromBody] Morador morador)
         {
-            _context.Morador.Add(morador);
+            _context.moradores.Add(morador);
             _context.SaveChanges();
             return Created("", morador);
         }
@@ -35,7 +35,7 @@ namespace API.Controllers
         [Route("buscar/{cpf}")]
         public IActionResult Buscar([FromRoute] string cpf)
         {
-            Morador morador = _context.Morador.
+            Morador morador = _context.moradores.
                 FirstOrDefault(f => f.Cpf.Equals(cpf));
             return morador != null ? Ok(morador) : NotFound();
         }
@@ -45,10 +45,10 @@ namespace API.Controllers
         [Route("deletar/{id}")]
         public IActionResult Deletar([FromRoute] int id)
         {
-            Morador morador = _context.Morador.Find(id);
+            Morador morador = _context.moradores.Find(id);
             if(morador != null)
             {
-                _context.Morador.Remove(morador);
+                _context.moradores.Remove(morador);
                 _context.SaveChanges();
                 return Ok(morador);
             }
@@ -62,7 +62,7 @@ namespace API.Controllers
         {
             try
             {
-                _context.Morador.Update(morador);
+                _context.moradores.Update(morador);
                 _context.SaveChanges();
                 return Ok(morador);
             }
