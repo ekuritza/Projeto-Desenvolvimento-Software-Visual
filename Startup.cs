@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,10 +29,16 @@ namespace projeto_estacionamento
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            // Definir qual é o Banco de Dados e a string de conexão
+            services.AddDbContext<DataContext>
+            (
+                options => options.UseSqlite("DataSource=condominio.db;Cache=shared")
+            );
+
+                services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "projeto_estacionamento", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "API_Folha", Version = "v1" });
             });
         }
 
