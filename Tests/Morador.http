@@ -1,0 +1,42 @@
+### Listar os moradores
+GET https://localhost:5001/api/morador/listar
+
+### Cadastrar um morador
+POST https://localhost:5001/api/morador/cadastrar
+Content-Type: application/json
+
+{
+
+    "nome" : "Eduardo Kuritza",
+    "cpf" : "12312312310",
+    "apartamento": "1",
+    "Email": "elkuritza@gmail.com",
+    "bloco": "1",
+    "modelo_veiculo": "corsa",
+    "cor": "preto",
+    "placa": "AAA-123",
+    "criadoEm": "2022-09-13T11:18:07.6276382-03:00"   
+}
+
+### Buscar um morador pelo CPF
+GET https://localhost:5001/api/morador/buscar/12312312310
+
+### Deletar um morador pelo Id
+DELETE https://localhost:5001/api/morador/deletar/1
+
+### Alterar um morador
+PATCH  https://localhost:5001/api/morador/alterar
+Content-Type: application/json
+
+{
+    "id" : 4,
+    "nome" : "Eduardo Kuritza Modificado",
+    "cpf" : "123",
+    "apartamento": "1",
+    "Email": "elkuritza@gmail.com",
+    "bloco": "1",
+    "modelo_veiculo": "celta",
+    "cor": "preto",
+    "placa": "AAA-123",
+    "criadoEm": "2022-09-13T11:18:07.6276382-03:00" 
+}

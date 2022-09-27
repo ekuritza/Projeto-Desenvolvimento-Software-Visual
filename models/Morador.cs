@@ -6,7 +6,7 @@ namespace API.Models
     public class Morador
     {
         public Morador () => CriadoEm = DateTime.Now;
-        public int      Id { get; set; }
+        public int      MoradorId { get; set; }
         public string   Nome { get; set; }
         public string   Cpf { get; set; }
         public string   Apartamento { get; set; }

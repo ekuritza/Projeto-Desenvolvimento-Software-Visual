@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Desktop\\Projeto-Desenvolvimento-Software-Visual-featadd_dbcontext\\projeto_estacionamento.csproj": {}
+    "C:\\Users\\Aluno\\Desktop\\Projeto-Desenvolvimento-Software-Visual-feat-add-http-teste\\projeto_estacionamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Desktop\\Projeto-Desenvolvimento-Software-Visual-featadd_dbcontext\\projeto_estacionamento.csproj": {
+    "C:\\Users\\Aluno\\Desktop\\Projeto-Desenvolvimento-Software-Visual-feat-add-http-teste\\projeto_estacionamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\Projeto-Desenvolvimento-Software-Visual-featadd_dbcontext\\projeto_estacionamento.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\Projeto-Desenvolvimento-Software-Visual-feat-add-http-teste\\projeto_estacionamento.csproj",
         "projectName": "projeto_estacionamento",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\Projeto-Desenvolvimento-Software-Visual-featadd_dbcontext\\projeto_estacionamento.csproj",
+        "projectPath": "C:\\Users\\Aluno\\Desktop\\Projeto-Desenvolvimento-Software-Visual-feat-add-http-teste\\projeto_estacionamento.csproj",
         "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\Projeto-Desenvolvimento-Software-Visual-featadd_dbcontext\\obj\\",
+        "outputPath": "C:\\Users\\Aluno\\Desktop\\Projeto-Desenvolvimento-Software-Visual-feat-add-http-teste\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
