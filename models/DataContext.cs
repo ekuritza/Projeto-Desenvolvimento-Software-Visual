@@ -11,7 +11,7 @@ namespace API.Models
 
         // Definir quais as classes de modelo servirão para as tabelas no banco de dados
         public DbSet<Morador> moradores { get; set; } // Sempre DbSet e o nome da classe no plural
-         public DbSet<Vagas> vagas { get; set; }
+        public DbSet<Vagas> vagas { get; set; }
 
     }
 }

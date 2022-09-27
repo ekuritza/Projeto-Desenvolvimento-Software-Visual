@@ -36,7 +36,7 @@ namespace API.Controllers
         public IActionResult Buscar([FromRoute] int id)
         {
             Vagas vagas = _context.vagas.
-                FirstOrDefault(f => f.Id.Equals(id));
+                FirstOrDefault(f => f.VagasId.Equals(id));
             return vagas != null ? Ok(vagas) : NotFound();
         }
     }
