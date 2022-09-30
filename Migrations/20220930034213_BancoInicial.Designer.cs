@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace projeto_estacionamento.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220930031037_BancoInicial")]
+    [Migration("20220930034213_BancoInicial")]
     partial class BancoInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
