@@ -23,15 +23,20 @@ namespace projeto_estacionamento.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Apartamento")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Bloco")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Cor")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Cpf")
+                        .IsRequired()
+                        .HasMaxLength(11)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("CriadoEm")
@@ -41,12 +46,15 @@ namespace projeto_estacionamento.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Modelo_veiculo")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Nome")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Placa")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("MoradorId");
@@ -63,7 +71,7 @@ namespace projeto_estacionamento.Migrations
                     b.Property<DateTime>("CriadoEm")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("MoradorId")
+                    b.Property<int>("MoradorId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("VagasId");
@@ -77,7 +85,9 @@ namespace projeto_estacionamento.Migrations
                 {
                     b.HasOne("API.Models.Morador", "Morador")
                         .WithMany()
-                        .HasForeignKey("MoradorId");
+                        .HasForeignKey("MoradorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Morador");
                 });

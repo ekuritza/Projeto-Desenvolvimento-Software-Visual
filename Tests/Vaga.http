@@ -6,10 +6,10 @@ POST https://localhost:5001/api/vagas/cadastrar
 Content-Type: application/json
 
 {
-    "MoradorId" : 1,
+    "MoradorId" : 4,
     "criadoEm": "2022-09-13T11:18:07.6276382-03:00"     
 }
 
 ### Buscar uma vaga pelo Id
-GET https://localhost:5001/api/vagas/buscar/1
+GET https://localhost:5001/api/vagas/buscar/7
 
