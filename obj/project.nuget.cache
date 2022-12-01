@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZWLumdRPB4HsRCRoIhFNCpTab8BXcYkYKlnxIIPZ8wsizuifwUmlwIRmLBtNqKuE8WOxQFUnDPfk6GKuXV0GRw==",
+  "dgSpecHash": "FiC3hteBkRQoZ/NWBpkVyNjNck1VrrFnU+MkVQDaVU3tvUf+Px+dmHVjQf76WL0xTwhDg7CQuK64HbACuLg1xA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RAFAEL\\Up\\Projeto-Desenvolvimento-Software-Visual\\projeto_estacionamento.csproj",
+  "projectFilePath": "C:\\Users\\RAFAEL\\up\\Projeto-Estacionamento-Condomínio\\projeto_estacionamento.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RAFAEL\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\RAFAEL\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RAFAEL\\Up\\Projeto-Desenvolvimento-Software-Visual\\projeto_estacionamento.csproj": {}
+    "C:\\Users\\RAFAEL\\up\\Projeto-Estacionamento-Condomínio\\projeto_estacionamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RAFAEL\\Up\\Projeto-Desenvolvimento-Software-Visual\\projeto_estacionamento.csproj": {
+    "C:\\Users\\RAFAEL\\up\\Projeto-Estacionamento-Condomínio\\projeto_estacionamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RAFAEL\\Up\\Projeto-Desenvolvimento-Software-Visual\\projeto_estacionamento.csproj",
+        "projectUniqueName": "C:\\Users\\RAFAEL\\up\\Projeto-Estacionamento-Condomínio\\projeto_estacionamento.csproj",
         "projectName": "projeto_estacionamento",
-        "projectPath": "C:\\Users\\RAFAEL\\Up\\Projeto-Desenvolvimento-Software-Visual\\projeto_estacionamento.csproj",
+        "projectPath": "C:\\Users\\RAFAEL\\up\\Projeto-Estacionamento-Condomínio\\projeto_estacionamento.csproj",
         "packagesPath": "C:\\Users\\RAFAEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RAFAEL\\Up\\Projeto-Desenvolvimento-Software-Visual\\obj\\",
+        "outputPath": "C:\\Users\\RAFAEL\\up\\Projeto-Estacionamento-Condomínio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RAFAEL\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -7,8 +7,8 @@ Content-Type: application/json
 
 {
 
-    "nome" : "Rafael de Angelo",
-    "cpf" : "08697637928",
+    "nome" : "Rafael de Angelo teste",
+    "cpf" : "08697637926",
     "apartamento": "2",
     "Email": "rafaelangelo15@hotmail.com",
     "bloco": "2",
@@ -18,8 +18,8 @@ Content-Type: application/json
 
 }
 
-### Buscar um morador pelo CPF
-GET https://localhost:5001/api/morador/buscar/08697637928
+### Buscar um morador pelo ID
+GET https://localhost:5001/api/morador/buscar/19
 
 ### Deletar um morador pelo Id
 DELETE https://localhost:5001/api/morador/deletar/2
@@ -29,7 +29,7 @@ PATCH  https://localhost:5001/api/morador/alterar
 Content-Type: application/json
 
 {
-    "moradorId" : 1,
+    "moradorId" : 22,
     "nome" : "Eduardo Kuritza Modificado",
     "cpf" : "07661385939",
     "apartamento": "3",

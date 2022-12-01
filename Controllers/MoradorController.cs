@@ -31,17 +31,17 @@ namespace API.Controllers
             return Created("", morador);
         }
 
-        // GET: /api/morador/buscar/{cpf}
+        // GET: /api/morador/buscar/{id}
         [HttpGet]
-        [Route("buscar/{cpf}")]
-        public IActionResult Buscar([FromRoute] string cpf)
+        [Route("buscar/{id}")]
+        public IActionResult Buscar([FromRoute] int id)
         {
             Morador morador = _context.moradores.
-                FirstOrDefault(f => f.Cpf.Equals(cpf));
+                FirstOrDefault(f => f.MoradorId == id);
             return morador != null ? Ok(morador) : NotFound();
         }
 
-        // DELETE: /api/morador/deletar/{cpf}
+        // DELETE: /api/morador/deletar/{id}
         [HttpDelete]
         [Route("deletar/{id}")]
         public IActionResult Deletar([FromRoute] int id)

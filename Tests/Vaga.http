@@ -6,7 +6,7 @@ POST https://localhost:5001/api/vagas/cadastrar
 Content-Type: application/json
 
 {
-    "MoradorId" : 1,
+    "MoradorId" : 2,
     "criadoEm": "2022-09-13T11:18:07.6276382-03:00"     
 }
 
